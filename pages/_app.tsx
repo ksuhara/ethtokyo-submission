@@ -1,7 +1,9 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
+import { ChakraProvider } from "@chakra-ui/react";
 import type { Liff } from "@line/liff";
-import { useState, useEffect } from "react";
+import { ScrollAlphaTestnet } from "@thirdweb-dev/chains";
+import { ThirdwebProvider } from "@thirdweb-dev/react";
+import type { AppProps } from "next/app";
+import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [liffObject, setLiffObject] = useState<Liff | null>(null);
@@ -31,7 +33,19 @@ function MyApp({ Component, pageProps }: AppProps) {
   // to page component as property
   pageProps.liff = liffObject;
   pageProps.liffError = liffError;
-  return <Component {...pageProps} />;
+  return (
+    <ThirdwebProvider
+      activeChain={ScrollAlphaTestnet}
+      authConfig={{
+        domain: process.env.NEXT_PUBLIC_THIRDWEB_AUTH_DOMAIN || "",
+        authUrl: "/api/auth",
+      }}
+    >
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </ThirdwebProvider>
+  );
 }
 
 export default MyApp;
