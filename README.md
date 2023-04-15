@@ -1,6 +1,6 @@
 ## Getting Started
 
-![LINEQR](https://tvasahi-hackathon-game.vercel.app/qr.png "LINE QR CODE")
+![LINEQR](https://tvasahi-hackathon-game.vercel.app/img/qr.png "LINE QR CODE")
 
 ## Contract
 
