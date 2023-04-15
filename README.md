@@ -4,4 +4,4 @@
 
 ## Contract
 
-[0x9f5bFA5D2C903a59fAd17b71D346484f992caa21](https://blockscout.scroll.io/address/0x9f5bFA5D2C903a59fAd17b71D346484f992caa2)
+[0x9f5bFA5D2C903a59fAd17b71D346484f992caa21](https://blockscout.scroll.io/address/0x9f5bFA5D2C903a59fAd17b71D346484f992caa21)
