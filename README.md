@@ -4,7 +4,7 @@
 
 ## Video
 [![サービス紹介動画](https://user-images.githubusercontent.com/45842611/232259470-9612ecdf-5aa1-4f6f-a6b8-5dbde03d8792.png
-)](https://youtu.be/5aKI900iGVo?t=1336)
+)](https://www.youtube.com/watch?v=iooCj9u2FcU)
 
 
 ## Contract
